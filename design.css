@@ -1,0 +1,147 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+:root{
+    --dark-cyan: hsl(185,75%,39%);
+    --dark-saturated-blue-cyan: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+
+body 
+{
+    
+    position: relative;
+    background: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.bottom-right {
+    position: absolute;
+    right: -220px;
+    bottom: -560px;
+    max-width: 100%;
+    height: auto;
+}
+.top-left {
+    position: absolute;
+    left: -280px;
+    top: -410px;
+    max-width: 100%;
+    height: auto;
+}
+
+.mainContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: white;
+    height: 375px;
+    row-gap: 20px;
+    box-shadow: 0px 10px 3000px 1px var(--dark-saturated-blue-cyan);
+}
+.profile-picture {
+    position: absolute;
+
+    margin-left: 35%;
+
+    top: 90px;
+
+    border-radius: 50px;
+
+    border: 2px solid white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 4rem;
+
+    align-self: center;
+    text-align: center;
+
+    width: 100%;
+
+    row-gap: 10px;
+    
+}
+#age {
+    color: var(--dark-gray);
+    font-size: 15px;
+}
+#city {
+    font-size: 12px;
+    color: var(--dark-gray)
+}
+.image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: auto;
+    max-height: 100%;
+}
+hr {
+    margin: 15px 0px;
+    /* border-width: 1px; */
+    border-width: 0px;
+    height: 1px;
+
+    background-color: hsl(0,5%,90%);
+    
+
+    
+}
+.stats {
+    display: flex;
+    flex-direction: row;
+    
+    height: 40px;
+    width: 98%;
+    font-size: 18px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.little__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.stat__cat {
+    font-size: 10px;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 376px) {
+    .mainContent {
+        max-width: 85vw;
+    }
+    .bottom-right {
+        position: absolute;
+        right: -500px;
+        bottom: -380px;
+        max-width: 700px;
+        height: auto;
+        
+    }
+    .top-left {
+        position: absolute;
+        left: -600px;
+        top: -460px;
+        max-width: 800px;
+        height: auto;
+    }
+}
