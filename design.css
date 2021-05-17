@@ -49,7 +49,8 @@ body
     background-color: white;
     height: 375px;
     row-gap: 20px;
-    box-shadow: 0px 10px 3000px 1px var(--dark-saturated-blue-cyan);
+    box-shadow: -10px 10px 200px -30px var(--dark-saturated-blue-cyan);
+    
 }
 .profile-picture {
     position: absolute;
